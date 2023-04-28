@@ -6,7 +6,7 @@ class Netflix extends Component{
     super(props);
     this.state = {
       movies: [],
-       new:'all'
+      
     };
 
   }
