@@ -12,7 +12,7 @@ class Netflix extends Component{
   }
 
   componentDidMount() {
-    fetch(`http://www.omdbapi.com/?apikey=9ffb785f&s=${this.state.new}`)
+    fetch(`http://www.omdbapi.com/?apikey=9ffb785f&s=all`)
       .then(response => response.json())
       .then(data => this.setState({ movies: data.Search }));
   }
